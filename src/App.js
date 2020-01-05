@@ -1,8 +1,6 @@
-
 import React from 'react';
-
-import React from 'react';
-
+import 'rbx/index.css';
+import { Button, Container, Title } from 'rbx';
 const schedule = {
   "title": "CS Courses for 2018-2019",
   "courses": [
@@ -29,10 +27,10 @@ const schedule = {
   ]
 };
 
-const terms = { F: 'Fall', W: 'Winter', S: 'Spring'};
+const terms = { F: 'Fall', W: 'Winter', S: 'Spring' };
 
 const Banner = p => (
-  <h1>{p.title}</h1>
+  <Title>{p.title}</Title>
 );
 
 const getCourseTerm = p => (
@@ -44,22 +42,26 @@ const getCourseNumber = p => (
 );
 
 const Course = (prop) => (
-  <p>
-    { getCourseTerm(prop.course) } CS { getCourseNumber(prop.course) }: { prop.course.title }
-  </p>
+  <div>
+    <Button>
+      {getCourseTerm(prop.course)} CS {getCourseNumber(prop.course)}: {prop.course.title}
+    </Button>
+  </div>
 );
 
 const CourseList = (prop) => (
   <div>
-    { prop.courses.map(course => <Course key={course.title} course={ course } />) }
+    <Button.Group>
+      {prop.courses.map(course => <Course key={course.title} course={course} />)}
+    </Button.Group>
   </div>
 );
 //key should be unique
 
-const App = () =>  (
-  <div>
-    <Banner title={ schedule.title } />
-    <CourseList courses={ schedule.courses } />
-  </div>
+const App = () => (
+  <Container>
+    <Banner title={schedule.title} />
+    <CourseList courses={schedule.courses} />
+  </Container>
 );
 export default App;
