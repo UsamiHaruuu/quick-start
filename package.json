@@ -6,6 +6,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "firebase": "^7.6.1",
+    "firebase-admin": "^8.9.0",
+    "firestore-export-import": "^0.3.2",
+    "rbx": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
@@ -30,5 +34,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). ssssssxs ## Available Scripts",
+  "main": "test.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UsamiHaruuu/quick-start.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UsamiHaruuu/quick-start/issues"
+  },
+  "homepage": "https://github.com/UsamiHaruuu/quick-start#readme"
 }
