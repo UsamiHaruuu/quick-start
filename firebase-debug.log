@@ -1,0 +1,109 @@
+[debug] [2020-01-07T19:49:01.311Z] ----------------------------------------------------------------------
+[debug] [2020-01-07T19:49:01.313Z] Command:       D:\NodeJs\node.exe C:\Users\lanbo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-01-07T19:49:01.313Z] CLI Version:   7.11.0
+[debug] [2020-01-07T19:49:01.313Z] Platform:      win32
+[debug] [2020-01-07T19:49:01.313Z] Node Version:  v12.14.0
+[debug] [2020-01-07T19:49:01.314Z] Time:          Tue Jan 07 2020 13:49:01 GMT-0600 (Central Standard Time)
+[debug] [2020-01-07T19:49:01.314Z] ----------------------------------------------------------------------
+[debug] [2020-01-07T19:49:01.314Z] 
+[debug] [2020-01-07T19:49:01.319Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-07T19:49:01.319Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\quick-start
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using quick-start-31bbc.
+[debug] [2020-01-07T19:49:07.356Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/quick-start-31bbc  
+ 
+[debug] [2020-01-07T19:49:07.494Z] <<< HTTP RESPONSE 200
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Database Rules for  have been downloaded to y.
+[info] Future modifications to y will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2020-01-07T19:49:09.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-07T19:49:09.940Z] > authorizing via signed-in user
+[debug] [2020-01-07T19:49:09.941Z] [iam] checking project quick-start-31bbc for permissions ["firebase.projects.get"]
+[debug] [2020-01-07T19:49:09.941Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/quick-start-31bbc:testIamPermissions  
+
+[debug] [2020-01-07T19:49:10.165Z] <<< HTTP RESPONSE 200
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-01-07T19:49:15.707Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/quick-start-31bbc/releases?pageSize=10&pageToken=  
+ 
+[debug] [2020-01-07T19:49:15.864Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-07T19:49:15.865Z] Found ruleset: projects/quick-start-31bbc/rulesets/20e9c14a-b52a-4ee2-ab70-286470189ab3
+[debug] [2020-01-07T19:49:15.865Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/quick-start-31bbc/rulesets/20e9c14a-b52a-4ee2-ab70-286470189ab3  
+ 
+[debug] [2020-01-07T19:49:15.969Z] <<< HTTP RESPONSE 200
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2020-01-07T19:49:24.261Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-07T19:49:24.261Z] > authorizing via signed-in user
+[debug] [2020-01-07T19:49:24.261Z] [iam] checking project quick-start-31bbc for permissions ["firebase.projects.get"]
+[debug] [2020-01-07T19:49:24.262Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/quick-start-31bbc:testIamPermissions  
+
+[debug] [2020-01-07T19:49:24.341Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-07T19:49:24.342Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/quick-start-31bbc/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2020-01-07T19:49:24.342Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/quick-start-31bbc/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2020-01-07T19:49:24.666Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-07T19:49:24.685Z] <<< HTTP RESPONSE 200
+[info] +  Wrote functions/package.json
+[info] i  Skipping write of functions/.eslintrc.json
+[info] i  Skipping write of functions/index.js
+[info] i  Skipping write of functions/.gitignore
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-01-07T19:49:45.521Z] Error: ENOENT: no such file or directory, open 'D:\quick-start\y\404.html'
+    at Object.openSync (fs.js:440:3)
+    at Object.writeFileSync (fs.js:1265:35)
+    at Object.createFileSync (C:\Users\lanbo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:34:6)
+    at Config.writeProjectFile (C:\Users\lanbo\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:178:8)
+    at C:\Users\lanbo\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:197:18
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.

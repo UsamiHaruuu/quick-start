@@ -6,7 +6,6 @@ import 'firebase/database';
 import 'firebase/auth';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import {CourseList} from './Components/CourseList'
-
 const firebaseConfig = {
   apiKey: "AIzaSyBFObHvrzBwAFBm40_tK4vioHPfcAnxAH4",
   authDomain: "quick-start-31bbc.firebaseapp.com",
@@ -50,14 +49,12 @@ const uiConfig = {
     signInSuccessWithAuthResult: () => false
   }
 };  
-
 const SignIn = () => (
   <StyledFirebaseAuth
     uiConfig={uiConfig}
     firebaseAuth={firebase.auth()}
   />
 );
-
 const Banner = ({ user, title }) => (
   <React.Fragment>
     { user ? <Welcome user={ user } /> : <SignIn /> }
