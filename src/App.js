@@ -55,6 +55,12 @@ const SignIn = () => (
     firebaseAuth={firebase.auth()}
   />
 );
+const SignIn = () => (
+  <StyledFirebaseAuth
+    uiConfig={uiConfig}
+    firebaseAuth={firebase.auth()}
+  />
+);
 const Banner = ({ user, title }) => (
   <React.Fragment>
     { user ? <Welcome user={ user } /> : <SignIn /> }
